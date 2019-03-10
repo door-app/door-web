@@ -13,10 +13,11 @@ export default {
     hello() {
       const request = new HelloRequest()
       console.log(request) // es-lint-disable-line
-      const client = new GreeterClient('http://localhost:9990', {}, {})
+      const client = new GreeterClient('http://localhost:8000', {}, {})
       client.sayHello(request, {}, (err, res) => {
         console.log('error', err)
         console.log('response', res)
+        console.log(res.toObject())
       })
     },
   },
