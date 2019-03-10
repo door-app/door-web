@@ -16,5 +16,15 @@ module.exports = {
     'prettier'
   ],
   // add your custom rules here
-  rules: {}
+  rules: {
+    'prettier/prettier': ["error", {
+      "semi": false,
+      'trailingComma': "es5"
+    }],
+    'vue/html-self-closing': 'off',
+    'vue/max-attributes-per-line': 'off',
+    'vue/attributes-order': 'off',
+    'vue/require-prop-types': 'off',
+    'vue/singleline-html-element-content-newline': 'off',
+  }
 }
