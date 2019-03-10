@@ -26,5 +26,6 @@ module.exports = {
     'vue/attributes-order': 'off',
     'vue/require-prop-types': 'off',
     'vue/singleline-html-element-content-newline': 'off',
+    'no-console': 'off',
   }
 }
